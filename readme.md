@@ -6,6 +6,7 @@
         Configura tu email y contraseña de linkedin
 
 usuario=***************************************************
+
 password=**************************************************
 
     Dos opciones de operaciones 

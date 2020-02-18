@@ -27,7 +27,7 @@ import puppeteer from 'puppeteer';
         await page.goto('https://www.linkedin.com/mynetwork/invite-connect/connections/')
         //window.location.href='https://www.linkedin.com/mynetwork/invite-connect/connections/';
         await page.waitForSelector(listConnectionCard);
-        //let data=[];
+        
         const data=await page.evaluate(()=>
           
             
