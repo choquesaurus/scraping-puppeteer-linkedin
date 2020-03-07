@@ -2,7 +2,6 @@ require('dotenv').config();
 import '@babel/polyfill';
 import RealizarOperacion from './operation/operations';
 //const {RealizarOperacion}=require('./operation/operations');
-
 import puppeteer from 'puppeteer';
 (
     async()=>{
@@ -27,6 +26,14 @@ import puppeteer from 'puppeteer';
         await page.goto('https://www.linkedin.com/mynetwork/invite-connect/connections/')
         //window.location.href='https://www.linkedin.com/mynetwork/invite-connect/connections/';
         await page.waitForSelector(listConnectionCard);
+        
+	
+
+
+
+
+
+
         
         const data=await page.evaluate(()=>
           
@@ -57,15 +64,6 @@ import puppeteer from 'puppeteer';
                   
             //   }
        
-          //    console.log(lista);
-        // for(let item=0;i<lista.length;i++)
-        // {
-        //     console.log(lista[item])
-        // }
-        // for(let item of lista){
-        //     let urlProfile=await item.$eval('.mn-connection-card__name',url=>url.innerText)
-        //     console.log(urlProfile);
-        // }
-      // await browser.close(); 
+           
     }
 )();
